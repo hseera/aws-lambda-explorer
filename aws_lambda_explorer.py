@@ -278,8 +278,7 @@ def main():
             except Exception as e:
                 window["-CONSOLEMSG-"].update(str(datetime.datetime.now().strftime(
                     "%Y-%m-%d %H:%M:%S")) + ": "+str(e)+"\n", append=True)
-        # #---------Cloudfront Tab------------------------
-               
+                     
               
         if event == '-WRITE-':
             window["-CONSOLEMSG-"].update(str(datetime.now().strftime("%Y-%m-%d %H:%M:%S")) +": "+str(values['-WRITE-'])+"\n", append=True)
