@@ -30,8 +30,8 @@ sg.theme('Reddit')
 
 Console =[
     [sg.Text("Console")],
-    [sg.Multiline(size=(48, 14),key="-CONSOLEMSG-",disabled=True)],
-    [sg.B("Clear Console",size=(20, 1)),sg.B("Save Console",size=(21, 1))]
+    [sg.Multiline(size=(60, 14),key="-CONSOLEMSG-",disabled=True)],
+    [sg.B("Clear Console",size=(27, 1)),sg.B("Save Console",size=(25, 1))]
     ]
 
 frame_layout = [
@@ -56,7 +56,7 @@ cost_expl=[]
 
 
 funct_list =[
-     [sg.Table(values=lambda_func_list_data,key="_list_", headings=['Function Name', 'Description','Last modified'],auto_size_columns=False, col_widths=[27, 30, 30],  num_rows=15,justification='left',enable_events=True )]
+     [sg.Table(values=lambda_func_list_data,key="_list_", headings=['Function Name', 'Package Type','Runtime','Last modified'],auto_size_columns=False, col_widths=[27, 30, 30],  num_rows=15,justification='left',enable_events=True )]
     ]
 
 Region = [
@@ -130,7 +130,8 @@ def get_lambda_function_list(REGION_NAME,window):
         else:
             for function in response['Functions']:
                 lambda_func_list_data.append([function['FunctionName'], 
-                                  function['Description'], 
+                                  function['PackageType'], 
+                                  function['Runtime'],
                                   function['LastModified']])
         
         return lambda_func_list_data
