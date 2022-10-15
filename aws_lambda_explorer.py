@@ -52,11 +52,11 @@ Desc =[
         [sg.Frame('Description', frame_layout, font='Any 12', title_color='blue')]
         ]
 
+cost_expl=[]
 
 
-
-dist =[
-     [sg.Table(values=lambda_func_list_data,key="_DIST_", headings=['Function Name', 'Description','Last modified'],auto_size_columns=False, col_widths=[27, 30, 30],  num_rows=15,justification='left',enable_events=True )]
+funct_list =[
+     [sg.Table(values=lambda_func_list_data,key="_list_", headings=['Function Name', 'Description','Last modified'],auto_size_columns=False, col_widths=[27, 30, 30],  num_rows=15,justification='left',enable_events=True )]
     ]
 
 Region = [
@@ -64,11 +64,13 @@ Region = [
          [sg.Listbox(values=[],enable_events=True,size=(32, 12), key="-REGION-")], 
          [sg.B("List Regions",size=(30, 1))]
     ]
-cfn_layout = [
+lambda_layout = [
     [
-      sg.Column(Region,size=(255, 270)), sg.Column(dist)],      
-      [
-      sg.Column(Desc,size=(700, 270))
+      sg.Column(Region,size=(255, 270)), sg.Column(funct_list)],      
+      [sg.TabGroup(
+         [[sg.Tab('Function Detail', Desc)],
+          [sg.Tab('Cost Explorer', cost_expl)]])
+      # sg.Column(Desc,size=(700, 270))
         ,sg.VSeperator(),
         sg.Column(Console)
       ]   
@@ -85,7 +87,7 @@ config =[
 
 config_layout = [[sg.Column(config)]]
 
-tabgrp = [[sg.TabGroup([[sg.Tab('Config', config_layout)],[sg.Tab('Lambda', cfn_layout)]])]]  
+tabgrp = [[sg.TabGroup([[sg.Tab('Config', config_layout)],[sg.Tab('Lambda', lambda_layout)]])]]  
 
 
 
@@ -95,7 +97,7 @@ def lambda_function_worker_thread(region_name, window):
     try:
         data=[] 
         data = get_lambda_function_list(region_name,window)
-        window["_DIST_"].update(data)                
+        window["_list_"].update(data)                
     except Exception as e:
         window.write_event_value('-WRITE-',e)
         
@@ -281,7 +283,7 @@ def main():
             window["-CONSOLEMSG-"].update(str(datetime.now().strftime("%Y-%m-%d %H:%M:%S")) +": "+str(values['-WRITE-'])+"\n", append=True)
         
             
-        if event == "_DIST_":
+        if event == "_list_":
             try:
                 data_selected = [lambda_func_list_data[row] for row in values[event]]               
                 threading.Thread(target=lambda_detail_worker_thread, 
