@@ -42,10 +42,8 @@ frame_layout = [
                   [sg.T('CodeSize (B):'), sg.Text("",size=(41, 1),key="-text_codesize-"),sg.T('MemorySize (MB):'), sg.Text("",size=(13, 1),key="-text_memorysize-")],
                   [sg.T('LastModified:'), sg.Text("",size=(41, 1),key="-text_lastmodifiedtime-"),sg.T(' Timeout (Sec):'), sg.Text("",size=(13, 1),key="-text_timeout-")],
                   [sg.T('State:'), sg.Text("",size=(47, 1),key="-text_state-"),sg.T('LastUpdateStatus:'), sg.Text("",size=(13, 1),key="-text_updatestatus-")],
-                  [sg.T('PackageType:'), sg.Text("",size=(41, 1),key="-text_packagetype-"),sg.T('RepositoryType:'), sg.Text("",size=(13, 1),key="-text_repotype-")],
-                  [sg.T('RevisionId:'), sg.Text("",size=(43, 1),key="-text_revid-")]
-
-
+                  [sg.T('Storage (MB):'), sg.Text("",size=(41, 1),key="-text_storage-"),sg.T('RepositoryType:'), sg.Text("",size=(13, 1),key="-text_repotype-")],
+                  [sg.T('RevisionId:'), sg.Text("",size=(43, 1),key="-text_revid-"),sg.T(' Architecture:'), sg.Text("",size=(13, 1),key="-text_arch-")]
                   ]                                
 
 Desc =[
@@ -56,7 +54,7 @@ cost_expl=[]
 
 
 funct_list =[
-     [sg.Table(values=lambda_func_list_data,key="_list_", headings=['Function Name', 'Package Type','Runtime','Last modified'],auto_size_columns=False, col_widths=[27, 30, 30],  num_rows=15,justification='left',enable_events=True )]
+     [sg.Table(values=lambda_func_list_data,key="_list_", headings=['Function Name', 'Package Type','Runtime','Last modified'],auto_size_columns=False, col_widths=[50, 10, 10,27],  num_rows=15,justification='left',enable_events=True )]
     ]
 
 Region = [
@@ -157,12 +155,13 @@ def set_lambda_detail(window):
         window["-text_timeout-"].update("")
         window["-text_state-"].update("")
         window["-text_updatestatus-"].update("")
-        window["-text_packagetype-"].update("")
+        window["-text_arch-"].update("")
         window["-text_repotype-"].update("")
         window["-text_desc-"].update("")
         window["-text_mode-"].update("")
         window["-text_codesha-"].update("")
         window["-text_revid-"].update("")
+        window["-text_storage-"].update("")
     except Exception as e:
         window.write_event_value('-WRITE-',e)
     
@@ -180,7 +179,6 @@ def describe_lambda_functions(REGION_NAME, function_name, window):
     try:
         CLIENT = session.client('lambda', config=REGION_CONFIG)
         response = CLIENT.get_function(FunctionName=function_name)
-        
         lambda_func_data.append([response['Configuration']['FunctionName'],
                                 response['Configuration']['Runtime'],
                                 response['Configuration']['CodeSize'],
@@ -192,9 +190,12 @@ def describe_lambda_functions(REGION_NAME, function_name, window):
                                 response['Configuration']['TracingConfig']['Mode'],
                                 response['Configuration']['State'],
                                 response['Configuration']['LastUpdateStatus'],
-                                response['Configuration']['PackageType'],
+                                #response['Configuration']['PackageType'],
                                 response['Configuration']['RevisionId'],
-                                response['Code']['RepositoryType']]                                
+                                response['Code']['RepositoryType'],
+                                response['Configuration']['Architectures'],
+                                response['Configuration']['EphemeralStorage']['Size']
+                                ]                                
             )
     
     
@@ -206,15 +207,20 @@ def describe_lambda_functions(REGION_NAME, function_name, window):
         window["-text_timeout-"].update(response['Configuration']['Timeout'])
         window["-text_state-"].update(response['Configuration']['State'])
         window["-text_updatestatus-"].update(response['Configuration']['LastUpdateStatus'])
-        window["-text_packagetype-"].update(response['Configuration']['PackageType'])
+        #window["-text_packagetype-"].update(response['Configuration']['PackageType'])
         window["-text_repotype-"].update(response['Code']['RepositoryType'])
         window["-text_desc-"].update(response['Configuration']['Description'])
         window["-text_mode-"].update(response['Configuration']['TracingConfig']['Mode'])
         window["-text_codesha-"].update(response['Configuration']['CodeSha256'])
         window["-text_revid-"].update(response['Configuration']['RevisionId'])
+        window["-text_arch-"].update(response['Configuration']['Architectures'])
+        window["-text_storage-"].update(response['Configuration']['EphemeralStorage']['Size'])
+        
         
     except Exception as e:
         window.write_event_value('-WRITE-',e)
+
+
 
 
 #-----------------Main function------------------------------------
