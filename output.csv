@@ -1,0 +1,397 @@
+Region Name,Lambda Type,Price,RegionCode
+AWS GovCloud (US),Lambda Duration-Provisioned,0.0000123033,us-gov-west-1
+AWS GovCloud (US),Lambda Edge-Duration,0.0000500100,us-gov-west-1
+AWS GovCloud (US),Lambda Edge-Requests,0.0000006000,us-gov-west-1
+AWS GovCloud (US),Lambda Provisioned-Concurrency,0.0000052729,us-gov-west-1
+AWS GovCloud (US),Lambda Requests,0.0000002000,us-gov-west-1
+AWS GovCloud (US),Lambda Storage-Duration,0.0000000370,us-gov-west-1
+AWS GovCloud (US),Lambda Duration Tier2,0.0000150000,us-gov-west-1
+AWS GovCloud (US),Lambda Duration,0.0000166667,us-gov-west-1
+AWS GovCloud (US),Lambda Duration Tier3,0.0000133334,us-gov-west-1
+AWS GovCloud (US-East),Lambda Duration-Provisioned,0.0000123033,us-gov-east-1
+AWS GovCloud (US-East),Lambda Edge-Duration,0.0000500100,us-gov-east-1
+AWS GovCloud (US-East),Lambda Edge-Requests,0.0000006000,us-gov-east-1
+AWS GovCloud (US-East),Lambda Provisioned-Concurrency,0.0000052729,us-gov-east-1
+AWS GovCloud (US-East),Lambda Requests,0.0000002000,us-gov-east-1
+AWS GovCloud (US-East),Lambda Storage-Duration,0.0000000370,us-gov-east-1
+AWS GovCloud (US-East),Lambda Duration Tier2,0.0000150000,us-gov-east-1
+AWS GovCloud (US-East),Lambda Duration,0.0000166667,us-gov-east-1
+AWS GovCloud (US-East),Lambda Duration Tier3,0.0000133334,us-gov-east-1
+Africa (Cape Town),Lambda Duration-Provisioned,0.0000129000,af-south-1
+Africa (Cape Town),Lambda Duration-Provisioned-ARM,0.0000103200,af-south-1
+Africa (Cape Town),Lambda Provisioned-Concurrency,0.0000055300,af-south-1
+Africa (Cape Town),Lambda Provisioned-Concurrency-ARM,0.0000044240,af-south-1
+Africa (Cape Town),Lambda Requests,0.0000002700,af-south-1
+Africa (Cape Town),Lambda Requests-ARM,0.0000002700,af-south-1
+Africa (Cape Town),Lambda Storage-Duration,0.0000000404,af-south-1
+Africa (Cape Town),Lambda Storage-Duration-ARM,0.0000000404,af-south-1
+Africa (Cape Town),Lambda Duration Tier2,0.0000198900,af-south-1
+Africa (Cape Town),Lambda Duration-ARM Tier2,0.0000159120,af-south-1
+Africa (Cape Town),Lambda Duration,0.0000221000,af-south-1
+Africa (Cape Town),Lambda Duration-ARM,0.0000176800,af-south-1
+Africa (Cape Town),Lambda Duration Tier3,0.0000176800,af-south-1
+Africa (Cape Town),Lambda Duration-ARM Tier3,0.0000141440,af-south-1
+Asia Pacific (Hong Kong),Lambda Duration-Provisioned,0.0000133358,ap-east-1
+Asia Pacific (Hong Kong),Lambda Duration-Provisioned-ARM,0.0000106686,ap-east-1
+Asia Pacific (Hong Kong),Lambda Edge-Duration,0.0000500100,ap-east-1
+Asia Pacific (Hong Kong),Lambda Edge-Requests,0.0000006000,ap-east-1
+Asia Pacific (Hong Kong),Lambda Provisioned-Concurrency,0.0000057153,ap-east-1
+Asia Pacific (Hong Kong),Lambda Provisioned-Concurrency-ARM,0.0000045722,ap-east-1
+Asia Pacific (Hong Kong),Lambda Requests,0.0000002800,ap-east-1
+Asia Pacific (Hong Kong),Lambda Requests-ARM,0.0000002800,ap-east-1
+Asia Pacific (Hong Kong),Lambda Storage-Duration,0.0000000407,ap-east-1
+Asia Pacific (Hong Kong),Lambda Storage-Duration-ARM,0.0000000407,ap-east-1
+Asia Pacific (Hong Kong),Lambda Duration Tier2,0.0000206200,ap-east-1
+Asia Pacific (Hong Kong),Lambda Duration-ARM Tier2,0.0000165000,ap-east-1
+Asia Pacific (Hong Kong),Lambda Duration,0.0000229200,ap-east-1
+Asia Pacific (Hong Kong),Lambda Duration-ARM,0.0000183000,ap-east-1
+Asia Pacific (Hong Kong),Lambda Duration Tier3,0.0000183300,ap-east-1
+Asia Pacific (Hong Kong),Lambda Duration-ARM Tier3,0.0000147000,ap-east-1
+Asia Pacific (Hyderabad),Lambda Duration-Provisioned,0.0000104966,ap-south-2
+Asia Pacific (Hyderabad),Lambda Duration-Provisioned-ARM,0.0000083973,ap-south-2
+Asia Pacific (Hyderabad),Lambda Provisioned-Concurrency,0.0000044985,ap-south-2
+Asia Pacific (Hyderabad),Lambda Provisioned-Concurrency-ARM,0.0000035988,ap-south-2
+Asia Pacific (Hyderabad),Lambda Requests,0.0000002000,ap-south-2
+Asia Pacific (Hyderabad),Lambda Requests-ARM,0.0000002000,ap-south-2
+Asia Pacific (Hyderabad),Lambda Duration Tier2,0.0000150000,ap-south-2
+Asia Pacific (Hyderabad),Lambda Duration-ARM Tier2,0.0000120001,ap-south-2
+Asia Pacific (Hyderabad),Lambda Duration,0.0000166667,ap-south-2
+Asia Pacific (Hyderabad),Lambda Duration-ARM,0.0000133334,ap-south-2
+Asia Pacific (Hyderabad),Lambda Duration Tier3,0.0000133334,ap-south-2
+Asia Pacific (Hyderabad),Lambda Duration-ARM Tier3,0.0000106667,ap-south-2
+Asia Pacific (Jakarta),Lambda Duration-Provisioned,0.0000121313,ap-southeast-3
+Asia Pacific (Jakarta),Lambda Duration-Provisioned-ARM,0.0000097050,ap-southeast-3
+Asia Pacific (Jakarta),Lambda Provisioned-Concurrency,0.0000051991,ap-southeast-3
+Asia Pacific (Jakarta),Lambda Provisioned-Concurrency-ARM,0.0000041593,ap-southeast-3
+Asia Pacific (Jakarta),Lambda Requests,0.0000002000,ap-southeast-3
+Asia Pacific (Jakarta),Lambda Requests-ARM,0.0000002000,ap-southeast-3
+Asia Pacific (Jakarta),Lambda Duration Tier2,0.0000150000,ap-southeast-3
+Asia Pacific (Jakarta),Lambda Duration-ARM Tier2,0.0000120001,ap-southeast-3
+Asia Pacific (Jakarta),Lambda Duration,0.0000166667,ap-southeast-3
+Asia Pacific (Jakarta),Lambda Duration-ARM,0.0000133334,ap-southeast-3
+Asia Pacific (Jakarta),Lambda Duration Tier3,0.0000133334,ap-southeast-3
+Asia Pacific (Jakarta),Lambda Duration-ARM Tier3,0.0000106667,ap-southeast-3
+Asia Pacific (Mumbai),Lambda Duration-Provisioned,0.0000104966,ap-south-1
+Asia Pacific (Mumbai),Lambda Duration-Provisioned-ARM,0.0000083973,ap-south-1
+Asia Pacific (Mumbai),Lambda Edge-Duration,0.0000500100,ap-south-1
+Asia Pacific (Mumbai),Lambda Edge-Requests,0.0000006000,ap-south-1
+Asia Pacific (Mumbai),Lambda Provisioned-Concurrency,0.0000044985,ap-south-1
+Asia Pacific (Mumbai),Lambda Provisioned-Concurrency-ARM,0.0000035988,ap-south-1
+Asia Pacific (Mumbai),Lambda Requests,0.0000002000,ap-south-1
+Asia Pacific (Mumbai),Lambda Requests-ARM,0.0000002000,ap-south-1
+Asia Pacific (Mumbai),Lambda Storage-Duration,0.0000000352,ap-south-1
+Asia Pacific (Mumbai),Lambda Storage-Duration-ARM,0.0000000352,ap-south-1
+Asia Pacific (Mumbai),Lambda Duration Tier2,0.0000150000,ap-south-1
+Asia Pacific (Mumbai),Lambda Duration-ARM Tier2,0.0000120001,ap-south-1
+Asia Pacific (Mumbai),Lambda Duration,0.0000166667,ap-south-1
+Asia Pacific (Mumbai),Lambda Duration-ARM,0.0000133334,ap-south-1
+Asia Pacific (Mumbai),Lambda Duration Tier3,0.0000133334,ap-south-1
+Asia Pacific (Mumbai),Lambda Duration-ARM Tier3,0.0000106667,ap-south-1
+Asia Pacific (Osaka),Lambda Duration-Provisioned,0.0000125615,ap-northeast-3
+Asia Pacific (Osaka),Lambda Duration-Provisioned-ARM,0.0000100492,ap-northeast-3
+Asia Pacific (Osaka),Lambda Provisioned-Concurrency,0.0000053835,ap-northeast-3
+Asia Pacific (Osaka),Lambda Provisioned-Concurrency-ARM,0.0000043068,ap-northeast-3
+Asia Pacific (Osaka),Lambda Requests,0.0000002000,ap-northeast-3
+Asia Pacific (Osaka),Lambda Requests-ARM,0.0000002000,ap-northeast-3
+Asia Pacific (Osaka),Lambda Storage-Duration,0.0000000370,ap-northeast-3
+Asia Pacific (Osaka),Lambda Storage-Duration-ARM,0.0000000370,ap-northeast-3
+Asia Pacific (Osaka),Lambda Duration Tier2,0.0000150000,ap-northeast-3
+Asia Pacific (Osaka),Lambda Duration-ARM Tier2,0.0000120001,ap-northeast-3
+Asia Pacific (Osaka),Lambda Duration,0.0000166667,ap-northeast-3
+Asia Pacific (Osaka),Lambda Duration-ARM,0.0000133334,ap-northeast-3
+Asia Pacific (Osaka),Lambda Duration Tier3,0.0000133334,ap-northeast-3
+Asia Pacific (Osaka),Lambda Duration-ARM Tier3,0.0000106667,ap-northeast-3
+Asia Pacific (Seoul),Lambda Duration-Provisioned,0.0000119592,ap-northeast-2
+Asia Pacific (Seoul),Lambda Duration-Provisioned-ARM,0.0000095674,ap-northeast-2
+Asia Pacific (Seoul),Lambda Edge-Duration,0.0000500100,ap-northeast-2
+Asia Pacific (Seoul),Lambda Edge-Requests,0.0000006000,ap-northeast-2
+Asia Pacific (Seoul),Lambda Provisioned-Concurrency,0.0000051254,ap-northeast-2
+Asia Pacific (Seoul),Lambda Provisioned-Concurrency-ARM,0.0000041003,ap-northeast-2
+Asia Pacific (Seoul),Lambda Requests,0.0000002000,ap-northeast-2
+Asia Pacific (Seoul),Lambda Requests-ARM,0.0000002000,ap-northeast-2
+Asia Pacific (Seoul),Lambda Storage-Duration,0.0000000352,ap-northeast-2
+Asia Pacific (Seoul),Lambda Storage-Duration-ARM,0.0000000352,ap-northeast-2
+Asia Pacific (Seoul),Lambda Duration Tier2,0.0000150000,ap-northeast-2
+Asia Pacific (Seoul),Lambda Duration-ARM Tier2,0.0000120001,ap-northeast-2
+Asia Pacific (Seoul),Lambda Duration,0.0000166667,ap-northeast-2
+Asia Pacific (Seoul),Lambda Duration-ARM,0.0000133334,ap-northeast-2
+Asia Pacific (Seoul),Lambda Duration Tier3,0.0000133334,ap-northeast-2
+Asia Pacific (Seoul),Lambda Duration-ARM Tier3,0.0000106667,ap-northeast-2
+Asia Pacific (Singapore),Lambda Duration-Provisioned,0.0000121313,ap-southeast-1
+Asia Pacific (Singapore),Lambda Duration-Provisioned-ARM,0.0000097050,ap-southeast-1
+Asia Pacific (Singapore),Lambda Edge-Duration,0.0000500100,ap-southeast-1
+Asia Pacific (Singapore),Lambda Edge-Requests,0.0000006000,ap-southeast-1
+Asia Pacific (Singapore),Lambda Provisioned-Concurrency,0.0000051991,ap-southeast-1
+Asia Pacific (Singapore),Lambda Provisioned-Concurrency-ARM,0.0000041593,ap-southeast-1
+Asia Pacific (Singapore),Lambda Requests,0.0000002000,ap-southeast-1
+Asia Pacific (Singapore),Lambda Requests-ARM,0.0000002000,ap-southeast-1
+Asia Pacific (Singapore),Lambda Storage-Duration,0.0000000370,ap-southeast-1
+Asia Pacific (Singapore),Lambda Storage-Duration-ARM,0.0000000370,ap-southeast-1
+Asia Pacific (Singapore),Lambda Duration Tier2,0.0000150000,ap-southeast-1
+Asia Pacific (Singapore),Lambda Duration-ARM Tier2,0.0000120001,ap-southeast-1
+Asia Pacific (Singapore),Lambda Duration,0.0000166667,ap-southeast-1
+Asia Pacific (Singapore),Lambda Duration-ARM,0.0000133334,ap-southeast-1
+Asia Pacific (Singapore),Lambda Duration Tier3,0.0000133334,ap-southeast-1
+Asia Pacific (Singapore),Lambda Duration-ARM Tier3,0.0000106667,ap-southeast-1
+Asia Pacific (Sydney),Lambda Duration-Provisioned,0.0000122173,ap-southeast-2
+Asia Pacific (Sydney),Lambda Duration-Provisioned-ARM,0.0000097738,ap-southeast-2
+Asia Pacific (Sydney),Lambda Edge-Duration,0.0000500100,ap-southeast-2
+Asia Pacific (Sydney),Lambda Edge-Requests,0.0000006000,ap-southeast-2
+Asia Pacific (Sydney),Lambda Provisioned-Concurrency,0.0000052360,ap-southeast-2
+Asia Pacific (Sydney),Lambda Provisioned-Concurrency-ARM,0.0000041888,ap-southeast-2
+Asia Pacific (Sydney),Lambda Requests,0.0000002000,ap-southeast-2
+Asia Pacific (Sydney),Lambda Requests-ARM,0.0000002000,ap-southeast-2
+Asia Pacific (Sydney),Lambda Storage-Duration,0.0000000370,ap-southeast-2
+Asia Pacific (Sydney),Lambda Storage-Duration-ARM,0.0000000370,ap-southeast-2
+Asia Pacific (Sydney),Lambda Duration Tier2,0.0000150000,ap-southeast-2
+Asia Pacific (Sydney),Lambda Duration-ARM Tier2,0.0000120001,ap-southeast-2
+Asia Pacific (Sydney),Lambda Duration,0.0000166667,ap-southeast-2
+Asia Pacific (Sydney),Lambda Duration-ARM,0.0000133334,ap-southeast-2
+Asia Pacific (Sydney),Lambda Duration Tier3,0.0000133334,ap-southeast-2
+Asia Pacific (Sydney),Lambda Duration-ARM Tier3,0.0000106667,ap-southeast-2
+Asia Pacific (Tokyo),Lambda Duration-Provisioned,0.0000125615,ap-northeast-1
+Asia Pacific (Tokyo),Lambda Duration-Provisioned-ARM,0.0000100492,ap-northeast-1
+Asia Pacific (Tokyo),Lambda Edge-Duration,0.0000500100,ap-northeast-1
+Asia Pacific (Tokyo),Lambda Edge-Requests,0.0000006000,ap-northeast-1
+Asia Pacific (Tokyo),Lambda Provisioned-Concurrency,0.0000053835,ap-northeast-1
+Asia Pacific (Tokyo),Lambda Provisioned-Concurrency-ARM,0.0000043068,ap-northeast-1
+Asia Pacific (Tokyo),Lambda Requests,0.0000002000,ap-northeast-1
+Asia Pacific (Tokyo),Lambda Requests-ARM,0.0000002000,ap-northeast-1
+Asia Pacific (Tokyo),Lambda Storage-Duration,0.0000000370,ap-northeast-1
+Asia Pacific (Tokyo),Lambda Storage-Duration-ARM,0.0000000370,ap-northeast-1
+Asia Pacific (Tokyo),Lambda Duration Tier2,0.0000150000,ap-northeast-1
+Asia Pacific (Tokyo),Lambda Duration-ARM Tier2,0.0000120001,ap-northeast-1
+Asia Pacific (Tokyo),Lambda Duration,0.0000166667,ap-northeast-1
+Asia Pacific (Tokyo),Lambda Duration-ARM,0.0000133334,ap-northeast-1
+Asia Pacific (Tokyo),Lambda Duration Tier3,0.0000133334,ap-northeast-1
+Asia Pacific (Tokyo),Lambda Duration-ARM Tier3,0.0000106667,ap-northeast-1
+Canada (Central),Lambda Duration-Provisioned,0.0000108407,ca-central-1
+Canada (Central),Lambda Duration-Provisioned-ARM,0.0000086726,ca-central-1
+Canada (Central),Lambda Edge-Duration,0.0000500100,ca-central-1
+Canada (Central),Lambda Edge-Requests,0.0000006000,ca-central-1
+Canada (Central),Lambda Provisioned-Concurrency,0.0000046460,ca-central-1
+Canada (Central),Lambda Provisioned-Concurrency-ARM,0.0000037168,ca-central-1
+Canada (Central),Lambda Requests,0.0000002000,ca-central-1
+Canada (Central),Lambda Requests-ARM,0.0000002000,ca-central-1
+Canada (Central),Lambda Storage-Duration,0.0000000340,ca-central-1
+Canada (Central),Lambda Storage-Duration-ARM,0.0000000340,ca-central-1
+Canada (Central),Lambda Duration Tier2,0.0000150000,ca-central-1
+Canada (Central),Lambda Duration-ARM Tier2,0.0000120001,ca-central-1
+Canada (Central),Lambda Duration,0.0000166667,ca-central-1
+Canada (Central),Lambda Duration-ARM,0.0000133334,ca-central-1
+Canada (Central),Lambda Duration Tier3,0.0000133334,ca-central-1
+Canada (Central),Lambda Duration-ARM Tier3,0.0000106667,ca-central-1
+EU (Frankfurt),Lambda Duration-Provisioned,0.0000117011,eu-central-1
+EU (Frankfurt),Lambda Duration-Provisioned-ARM,0.0000093609,eu-central-1
+EU (Frankfurt),Lambda Edge-Duration,0.0000500100,eu-central-1
+EU (Frankfurt),Lambda Edge-Requests,0.0000006000,eu-central-1
+EU (Frankfurt),Lambda Provisioned-Concurrency,0.0000050147,eu-central-1
+EU (Frankfurt),Lambda Provisioned-Concurrency-ARM,0.0000040118,eu-central-1
+EU (Frankfurt),Lambda Requests,0.0000002000,eu-central-1
+EU (Frankfurt),Lambda Requests-ARM,0.0000002000,eu-central-1
+EU (Frankfurt),Lambda Storage-Duration,0.0000000367,eu-central-1
+EU (Frankfurt),Lambda Storage-Duration-ARM,0.0000000367,eu-central-1
+EU (Frankfurt),Lambda Duration Tier2,0.0000150000,eu-central-1
+EU (Frankfurt),Lambda Duration-ARM Tier2,0.0000120001,eu-central-1
+EU (Frankfurt),Lambda Duration,0.0000166667,eu-central-1
+EU (Frankfurt),Lambda Duration-ARM,0.0000133334,eu-central-1
+EU (Frankfurt),Lambda Duration Tier3,0.0000133334,eu-central-1
+EU (Frankfurt),Lambda Duration-ARM Tier3,0.0000106667,eu-central-1
+EU (Ireland),Lambda Duration-Provisioned,0.0000108407,eu-west-1
+EU (Ireland),Lambda Duration-Provisioned-ARM,0.0000086726,eu-west-1
+EU (Ireland),Lambda Edge-Duration,0.0000500100,eu-west-1
+EU (Ireland),Lambda Edge-Requests,0.0000006000,eu-west-1
+EU (Ireland),Lambda Provisioned-Concurrency,0.0000046460,eu-west-1
+EU (Ireland),Lambda Provisioned-Concurrency-ARM,0.0000037168,eu-west-1
+EU (Ireland),Lambda Requests,0.0000002000,eu-west-1
+EU (Ireland),Lambda Requests-ARM,0.0000002000,eu-west-1
+EU (Ireland),Lambda Storage-Duration,0.0000000340,eu-west-1
+EU (Ireland),Lambda Storage-Duration-ARM,0.0000000340,eu-west-1
+EU (Ireland),Lambda Duration Tier2,0.0000150000,eu-west-1
+EU (Ireland),Lambda Duration-ARM Tier2,0.0000120001,eu-west-1
+EU (Ireland),Lambda Duration,0.0000166667,eu-west-1
+EU (Ireland),Lambda Duration-ARM,0.0000133334,eu-west-1
+EU (Ireland),Lambda Duration Tier3,0.0000133334,eu-west-1
+EU (Ireland),Lambda Duration-ARM Tier3,0.0000106667,eu-west-1
+EU (London),Lambda Duration-Provisioned,0.0000112709,eu-west-2
+EU (London),Lambda Duration-Provisioned-ARM,0.0000090167,eu-west-2
+EU (London),Lambda Edge-Duration,0.0000500100,eu-west-2
+EU (London),Lambda Edge-Requests,0.0000006000,eu-west-2
+EU (London),Lambda Provisioned-Concurrency,0.0000048304,eu-west-2
+EU (London),Lambda Provisioned-Concurrency-ARM,0.0000038643,eu-west-2
+EU (London),Lambda Requests,0.0000002000,eu-west-2
+EU (London),Lambda Requests-ARM,0.0000002000,eu-west-2
+EU (London),Lambda Storage-Duration,0.0000000358,eu-west-2
+EU (London),Lambda Storage-Duration-ARM,0.0000000358,eu-west-2
+EU (London),Lambda Duration Tier2,0.0000150000,eu-west-2
+EU (London),Lambda Duration-ARM Tier2,0.0000120001,eu-west-2
+EU (London),Lambda Duration,0.0000166667,eu-west-2
+EU (London),Lambda Duration-ARM,0.0000133334,eu-west-2
+EU (London),Lambda Duration Tier3,0.0000133334,eu-west-2
+EU (London),Lambda Duration-ARM Tier3,0.0000106667,eu-west-2
+EU (Milan),Lambda Duration-Provisioned,0.0000113827,eu-south-1
+EU (Milan),Lambda Duration-Provisioned-ARM,0.0000091062,eu-south-1
+EU (Milan),Lambda Provisioned-Concurrency,0.0000048783,eu-south-1
+EU (Milan),Lambda Provisioned-Concurrency-ARM,0.0000039026,eu-south-1
+EU (Milan),Lambda Requests,0.0000002300,eu-south-1
+EU (Milan),Lambda Requests-ARM,0.0000002300,eu-south-1
+EU (Milan),Lambda Storage-Duration,0.0000000357,eu-south-1
+EU (Milan),Lambda Storage-Duration-ARM,0.0000000357,eu-south-1
+EU (Milan),Lambda Duration Tier2,0.0000175655,eu-south-1
+EU (Milan),Lambda Duration-ARM Tier2,0.0000140524,eu-south-1
+EU (Milan),Lambda Duration,0.0000195172,eu-south-1
+EU (Milan),Lambda Duration-ARM,0.0000156138,eu-south-1
+EU (Milan),Lambda Duration Tier3,0.0000156138,eu-south-1
+EU (Milan),Lambda Duration-ARM Tier3,0.0000124910,eu-south-1
+EU (Paris),Lambda Duration-Provisioned,0.0000113569,eu-west-3
+EU (Paris),Lambda Duration-Provisioned-ARM,0.0000090855,eu-west-3
+EU (Paris),Lambda Edge-Duration,0.0000500100,eu-west-3
+EU (Paris),Lambda Edge-Requests,0.0000006000,eu-west-3
+EU (Paris),Lambda Provisioned-Concurrency,0.0000048673,eu-west-3
+EU (Paris),Lambda Provisioned-Concurrency-ARM,0.0000038938,eu-west-3
+EU (Paris),Lambda Requests,0.0000002000,eu-west-3
+EU (Paris),Lambda Requests-ARM,0.0000002000,eu-west-3
+EU (Paris),Lambda Storage-Duration,0.0000000358,eu-west-3
+EU (Paris),Lambda Storage-Duration-ARM,0.0000000358,eu-west-3
+EU (Paris),Lambda Duration Tier2,0.0000150000,eu-west-3
+EU (Paris),Lambda Duration-ARM Tier2,0.0000120001,eu-west-3
+EU (Paris),Lambda Duration,0.0000166667,eu-west-3
+EU (Paris),Lambda Duration-ARM,0.0000133334,eu-west-3
+EU (Paris),Lambda Duration Tier3,0.0000133334,eu-west-3
+EU (Paris),Lambda Duration-ARM Tier3,0.0000106667,eu-west-3
+EU (Spain),Lambda Duration-Provisioned,0.0000108407,eu-south-2
+EU (Spain),Lambda Edge-Duration,0.0000500100,eu-south-2
+EU (Spain),Lambda Edge-Requests,0.0000006000,eu-south-2
+EU (Spain),Lambda Provisioned-Concurrency,0.0000046460,eu-south-2
+EU (Spain),Lambda Requests,0.0000002000,eu-south-2
+EU (Spain),Lambda Storage-Duration,0.0000000340,eu-south-2
+EU (Spain),Lambda Duration Tier2,0.0000150000,eu-south-2
+EU (Spain),Lambda Duration,0.0000166667,eu-south-2
+EU (Spain),Lambda Duration Tier3,0.0000133334,eu-south-2
+EU (Stockholm),Lambda Duration-Provisioned,0.0000103245,eu-north-1
+EU (Stockholm),Lambda Duration-Provisioned-ARM,0.0000082596,eu-north-1
+EU (Stockholm),Lambda Edge-Duration,0.0000500100,eu-north-1
+EU (Stockholm),Lambda Edge-Requests,0.0000006000,eu-north-1
+EU (Stockholm),Lambda Provisioned-Concurrency,0.0000044248,eu-north-1
+EU (Stockholm),Lambda Provisioned-Concurrency-ARM,0.0000035398,eu-north-1
+EU (Stockholm),Lambda Requests,0.0000002000,eu-north-1
+EU (Stockholm),Lambda Requests-ARM,0.0000002000,eu-north-1
+EU (Stockholm),Lambda Storage-Duration,0.0000000323,eu-north-1
+EU (Stockholm),Lambda Storage-Duration-ARM,0.0000000323,eu-north-1
+EU (Stockholm),Lambda Duration Tier2,0.0000150000,eu-north-1
+EU (Stockholm),Lambda Duration-ARM Tier2,0.0000120001,eu-north-1
+EU (Stockholm),Lambda Duration,0.0000166667,eu-north-1
+EU (Stockholm),Lambda Duration-ARM,0.0000133334,eu-north-1
+EU (Stockholm),Lambda Duration Tier3,0.0000133334,eu-north-1
+EU (Stockholm),Lambda Duration-ARM Tier3,0.0000106667,eu-north-1
+EU (Zurich),Lambda Duration-Provisioned,0.0000128712,eu-central-2
+EU (Zurich),Lambda Provisioned-Concurrency,0.0000055162,eu-central-2
+EU (Zurich),Lambda Requests,0.0000002200,eu-central-2
+EU (Zurich),Lambda Duration Tier2,0.0000165000,eu-central-2
+EU (Zurich),Lambda Duration,0.0000183334,eu-central-2
+EU (Zurich),Lambda Duration Tier3,0.0000146667,eu-central-2
+Middle East (Bahrain),Lambda Duration-Provisioned,0.0000119251,me-south-1
+Middle East (Bahrain),Lambda Duration-Provisioned-ARM,0.0000095401,me-south-1
+Middle East (Bahrain),Lambda Edge-Duration,0.0000500100,me-south-1
+Middle East (Bahrain),Lambda Edge-Requests,0.0000006000,me-south-1
+Middle East (Bahrain),Lambda Provisioned-Concurrency,0.0000051108,me-south-1
+Middle East (Bahrain),Lambda Provisioned-Concurrency-ARM,0.0000040886,me-south-1
+Middle East (Bahrain),Lambda Requests,0.0000002500,me-south-1
+Middle East (Bahrain),Lambda Requests-ARM,0.0000002500,me-south-1
+Middle East (Bahrain),Lambda Storage-Duration,0.0000000374,me-south-1
+Middle East (Bahrain),Lambda Storage-Duration-ARM,0.0000000374,me-south-1
+Middle East (Bahrain),Lambda Duration Tier2,0.0000185910,me-south-1
+Middle East (Bahrain),Lambda Duration-ARM Tier2,0.0000148801,me-south-1
+Middle East (Bahrain),Lambda Duration,0.0000206667,me-south-1
+Middle East (Bahrain),Lambda Duration-ARM,0.0000165334,me-south-1
+Middle East (Bahrain),Lambda Duration Tier3,0.0000165334,me-south-1
+Middle East (Bahrain),Lambda Duration-ARM Tier3,0.0000132267,me-south-1
+Middle East (UAE),Lambda Duration-Provisioned,0.0000119251,me-central-1
+Middle East (UAE),Lambda Edge-Duration,0.0000500100,me-central-1
+Middle East (UAE),Lambda Edge-Requests,0.0000006000,me-central-1
+Middle East (UAE),Lambda Provisioned-Concurrency,0.0000051108,me-central-1
+Middle East (UAE),Lambda Requests,0.0000002500,me-central-1
+Middle East (UAE),Lambda Storage-Duration,0.0000000374,me-central-1
+Middle East (UAE),Lambda Duration Tier2,0.0000185910,me-central-1
+Middle East (UAE),Lambda Duration,0.0000206667,me-central-1
+Middle East (UAE),Lambda Duration Tier3,0.0000165334,me-central-1
+South America (Sao Paulo),Lambda Duration-Provisioned,0.0000154867,sa-east-1
+South America (Sao Paulo),Lambda Duration-Provisioned-ARM,0.0000123894,sa-east-1
+South America (Sao Paulo),Lambda Edge-Duration,0.0000500100,sa-east-1
+South America (Sao Paulo),Lambda Edge-Requests,0.0000006000,sa-east-1
+South America (Sao Paulo),Lambda Provisioned-Concurrency,0.0000066372,sa-east-1
+South America (Sao Paulo),Lambda Provisioned-Concurrency-ARM,0.0000053098,sa-east-1
+South America (Sao Paulo),Lambda Requests,0.0000002000,sa-east-1
+South America (Sao Paulo),Lambda Requests-ARM,0.0000002000,sa-east-1
+South America (Sao Paulo),Lambda Storage-Duration,0.0000000586,sa-east-1
+South America (Sao Paulo),Lambda Storage-Duration-ARM,0.0000000586,sa-east-1
+South America (Sao Paulo),Lambda Duration Tier2,0.0000150000,sa-east-1
+South America (Sao Paulo),Lambda Duration-ARM Tier2,0.0000120001,sa-east-1
+South America (Sao Paulo),Lambda Duration,0.0000166667,sa-east-1
+South America (Sao Paulo),Lambda Duration-ARM,0.0000133334,sa-east-1
+South America (Sao Paulo),Lambda Duration Tier3,0.0000133334,sa-east-1
+South America (Sao Paulo),Lambda Duration-ARM Tier3,0.0000106667,sa-east-1
+US East (N. Virginia),Lambda Duration-Provisioned,0.0000097222,us-east-1
+US East (N. Virginia),Lambda Duration-Provisioned-ARM,0.0000077778,us-east-1
+US East (N. Virginia),Lambda Edge-Duration,0.0000500100,us-east-1
+US East (N. Virginia),Lambda Edge-Requests,0.0000006000,us-east-1
+US East (N. Virginia),Lambda Provisioned-Concurrency,0.0000041667,us-east-1
+US East (N. Virginia),Lambda Provisioned-Concurrency-ARM,0.0000033334,us-east-1
+US East (N. Virginia),Lambda Requests,0.0000002000,us-east-1
+US East (N. Virginia),Lambda Requests-ARM,0.0000002000,us-east-1
+US East (N. Virginia),Lambda Storage-Duration,0.0000000309,us-east-1
+US East (N. Virginia),Lambda Storage-Duration-ARM,0.0000000309,us-east-1
+US East (N. Virginia),Lambda Duration Tier2,0.0000150000,us-east-1
+US East (N. Virginia),Lambda Duration-ARM Tier2,0.0000120001,us-east-1
+US East (N. Virginia),Lambda Duration,0.0000166667,us-east-1
+US East (N. Virginia),Lambda Duration-ARM,0.0000133334,us-east-1
+US East (N. Virginia),Lambda Duration Tier3,0.0000133334,us-east-1
+US East (N. Virginia),Lambda Duration-ARM Tier3,0.0000106667,us-east-1
+US East (Ohio),Lambda Duration-Provisioned,0.0000097222,us-east-2
+US East (Ohio),Lambda Duration-Provisioned-ARM,0.0000077778,us-east-2
+US East (Ohio),Lambda Edge-Duration,0.0000500100,us-east-2
+US East (Ohio),Lambda Edge-Requests,0.0000006000,us-east-2
+US East (Ohio),Lambda Provisioned-Concurrency,0.0000041667,us-east-2
+US East (Ohio),Lambda Provisioned-Concurrency-ARM,0.0000033334,us-east-2
+US East (Ohio),Lambda Requests,0.0000002000,us-east-2
+US East (Ohio),Lambda Requests-ARM,0.0000002000,us-east-2
+US East (Ohio),Lambda Storage-Duration,0.0000000309,us-east-2
+US East (Ohio),Lambda Storage-Duration-ARM,0.0000000309,us-east-2
+US East (Ohio),Lambda Duration Tier2,0.0000150000,us-east-2
+US East (Ohio),Lambda Duration-ARM Tier2,0.0000120001,us-east-2
+US East (Ohio),Lambda Duration,0.0000166667,us-east-2
+US East (Ohio),Lambda Duration-ARM,0.0000133334,us-east-2
+US East (Ohio),Lambda Duration Tier3,0.0000133334,us-east-2
+US East (Ohio),Lambda Duration-ARM Tier3,0.0000106667,us-east-2
+US West (N. California),Lambda Duration-Provisioned,0.0000114430,us-west-1
+US West (N. California),Lambda Duration-Provisioned-ARM,0.0000091544,us-west-1
+US West (N. California),Lambda Edge-Duration,0.0000500100,us-west-1
+US West (N. California),Lambda Edge-Requests,0.0000006000,us-west-1
+US West (N. California),Lambda Provisioned-Concurrency,0.0000049041,us-west-1
+US West (N. California),Lambda Provisioned-Concurrency-ARM,0.0000039233,us-west-1
+US West (N. California),Lambda Requests,0.0000002000,us-west-1
+US West (N. California),Lambda Requests-ARM,0.0000002000,us-west-1
+US West (N. California),Lambda Storage-Duration,0.0000000370,us-west-1
+US West (N. California),Lambda Storage-Duration-ARM,0.0000000370,us-west-1
+US West (N. California),Lambda Duration Tier2,0.0000150000,us-west-1
+US West (N. California),Lambda Duration-ARM Tier2,0.0000120001,us-west-1
+US West (N. California),Lambda Duration,0.0000166667,us-west-1
+US West (N. California),Lambda Duration-ARM,0.0000133334,us-west-1
+US West (N. California),Lambda Duration Tier3,0.0000133334,us-west-1
+US West (N. California),Lambda Duration-ARM Tier3,0.0000106667,us-west-1
+US West (Oregon),Lambda Duration-Provisioned,0.0000097222,us-west-2
+US West (Oregon),Lambda Duration-Provisioned-ARM,0.0000077778,us-west-2
+US West (Oregon),Lambda Edge-Duration,0.0000500100,us-west-2
+US West (Oregon),Lambda Edge-Requests,0.0000006000,us-west-2
+US West (Oregon),Lambda Provisioned-Concurrency,0.0000041667,us-west-2
+US West (Oregon),Lambda Provisioned-Concurrency-ARM,0.0000033334,us-west-2
+US West (Oregon),Lambda Requests,0.0000002000,us-west-2
+US West (Oregon),Lambda Requests-ARM,0.0000002000,us-west-2
+US West (Oregon),Lambda Storage-Duration,0.0000000309,us-west-2
+US West (Oregon),Lambda Storage-Duration-ARM,0.0000000309,us-west-2
+US West (Oregon),Lambda Duration Tier2,0.0000150000,us-west-2
+US West (Oregon),Lambda Duration-ARM Tier2,0.0000120001,us-west-2
+US West (Oregon),Lambda Duration,0.0000166667,us-west-2
+US West (Oregon),Lambda Duration-ARM,0.0000133334,us-west-2
+US West (Oregon),Lambda Duration Tier3,0.0000133334,us-west-2
+US West (Oregon),Lambda Duration-ARM Tier3,0.0000106667,us-west-2

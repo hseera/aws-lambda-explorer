@@ -18,11 +18,16 @@ import time
 #import datetime
 from datetime import datetime,timedelta
 import sys
+import pandas as pd
+import time
+import requests
+
 
 session = boto3.session.Session()
 
 lambda_func_list_data=[]
 lambda_func_data=[]
+global rate_code_dataframe
 
 sg.theme('Reddit')
 
@@ -222,6 +227,70 @@ def describe_lambda_functions(REGION_NAME, function_name, window):
 
 
 
+#get lamaba rate by region
+def get_rates_for_all_regions(window):
+    try:
+        t = time.time()
+        t_ms = int(t * 1000)
+        
+        #Get price for each lambda parameter by region name
+        headers = {"Accept-Encoding": "gzip, deflate, br",
+               "Origin": "https://aws.amazon.com",
+               "Sec-Fetch-Mode": "cors",
+               "Sec-Fetch-Site": "cross-site",
+               "Cache-Control": "no-cache",
+               "Sec-Fetch-Dest": "empty",
+               }
+        lambda_resp = requests.get('https://b0.p.awsstatic.com/pricing/2.0/meteredUnitMaps/lambda/USD/current/lambda.json?timestamp={value}'.format(value=t_ms), headers=headers)
+    
+        lambda_resp_dict = lambda_resp.json()
+        
+        #from json only extract region name, lambda parameter and price
+        price_list = [] 
+        for key, val in lambda_resp_dict['regions'].items():
+            for key1, val1 in val.items():
+                price_list.append([key, key1, val1['price']])
+    
+        #Get region code
+        headers = {"Accept-Encoding": "gzip, deflate, br",
+                    "Origin": "https://aws.amazon.com",
+                    "Sec-Fetch-Mode": "cors",
+                    "Sec-Fetch-Site": "cross-site",
+                    "Cache-Control": "no-cache",
+                    "Sec-Fetch-Dest": "empty",
+                    }
+        location_resp = requests.get('https://b0.p.awsstatic.com/locations/1.0/aws/current/locations.json?timestamp={value}'.format(value=t_ms), headers=headers)
+    
+        location_response_dict = location_resp.json()
+        
+        
+        region_list =[]
+        for key, val in location_response_dict.items():
+            region_list.append([key,val['code']])
+        
+        #convert list to dataframe
+        df = pd.DataFrame (price_list, columns = ['Region Name', 'Lambda Type', 'Price'])
+        
+        df2 = pd.DataFrame (region_list, columns = ['Region Name', 'RegionCode'])
+        
+        '''merge dataframe so we now have region name, lambda parameter, price and region code.
+        We will need this to calculate the cost of lambda function in a region.
+        '''
+        rate_code_dataframe = df.merge(df2)
+        
+        return rate_code_dataframe
+    
+    except Exception as e:
+        window.write_event_value('-WRITE-',e)
+
+
+def rate_worker_thread(window):
+    try:
+        rate_code_dataframe = get_rates_for_all_regions(window)
+        rate_code_dataframe.to_csv('./output.csv',index=False)                
+    except Exception as e:
+        window.write_event_value('-WRITE-',e)
+
 
 #-----------------Main function------------------------------------
 def main():
@@ -229,7 +298,8 @@ def main():
     window = sg.Window('AWS Lambda Explorer', tabgrp) #layout
     
     region_loop = False
-    
+    threading.Thread(target=rate_worker_thread,
+                                      args=(window,),  daemon=True).start()
     while True: # The Event Loop
         event, values = window.read()
         if event == sg.WIN_CLOSED or event == 'Exit':
@@ -273,8 +343,6 @@ def main():
             except Exception as e:
                 window["-CONSOLEMSG-"].update(str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")) +": "+str(e)+"\n", append=True )
 
-        
-
         if event == '-REGION-':
             try:
 
@@ -300,8 +368,7 @@ def main():
             except Exception as e:
                   window["-CONSOLEMSG-"].update(str(datetime.now().strftime("%Y-%m-%d %H:%M:%S")) +": "+str(e)+"\n", append=True )
   
-    
-                
+                    
         if event == 'Save Console':
             try:
                 file= open(".\output.txt", 'a+')
